@@ -54,7 +54,7 @@ li{
 }
 
 img{
-  box-shadow: 10px 10px 2px #02010a;
+  box-shadow: 2px 2px 2px #02010a;
 }
 
 .articulos{
@@ -72,4 +72,34 @@ img{
 
 #ImgRetratos{
   width: 50%;
+}
+
+#ImgPaisajes img[src="img/Paisajes1.png"]{
+  /*Safari*/
+  -webkit-transition: all 2s ease;
+  /*Mozilla Firefox*/
+  -moz-transition: all 2s ease;
+  /*Estandar*/
+  transition: all 2s ease;
+}
+
+#ImgPaisajes img[src="img/Paisajes1.png"]:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px 2px #82c3a6;
+  border: 2px;
+}
+
+#ImgRetratos img[src="img/Retratos1.jpg"]{
+  /*Safari*/
+  -webkit-transition: all 1s ease;
+  /*Mozilla Firefox*/
+  -moz-transition: all 1s ease;
+  /*Estandar*/
+  transition: all 1s ease;
+}
+
+#ImgRetratos img[src="img/Retratos1.jpg"]:hover{
+  transform: translate(20px, -5px);
+  box-shadow: 2px 2px 2px #82c3a6;
+  border: 2px;
 }

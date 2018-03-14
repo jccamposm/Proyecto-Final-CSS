@@ -122,3 +122,8 @@ footer{
 footer p{
   margin: auto;
 }
+
+footer img[src^=ico]{
+  width: 25px;
+  height: 25px;
+}

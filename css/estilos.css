@@ -12,6 +12,10 @@ h1{
   width: 100%
 }
 
+h2{
+  margin-top: auto;
+}
+
 #contenido{
   background-color: #5b7989;
   color: White;
@@ -102,4 +106,19 @@ img{
   transform: translate(20px, -5px);
   box-shadow: 2px 2px 2px #82c3a6;
   border: 2px;
+}
+
+footer{
+  background-color: #c6d5c5;
+  font-family: 'Dancing Script', cursive;
+  display: flex;
+  flex-direction: row;
+}
+
+#Contacto, #Terminos, #Redes, #Derechos{
+  padding: 20px 20px
+}
+
+footer p{
+  margin: auto;
 }

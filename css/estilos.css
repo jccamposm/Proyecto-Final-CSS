@@ -207,23 +207,30 @@ footer img[src^=ico]{
     margin-right: auto;
   }
 
+  header {
+    display: flex;
+    font-size: 1em;
+  }
+
   #cabecera{
     margin: auto;
     padding: auto;
   }
 
-  header{
-    margin: auto;
-  }
 
   #TituloPpal h1{
-    text-align: justify;
-    margin: auto;
+    text-align: center;
+    margin: 0;
+  }
+
+  header nav ul{
+    margin: 0;
   }
 
   #MenuPpal {
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding-top: 10px;
+    word-spacing: normal;
   }
 
   #ImgPpal {

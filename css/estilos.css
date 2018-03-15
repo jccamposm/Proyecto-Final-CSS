@@ -1,8 +1,5 @@
 body{
   background-color: #02010a;
-  width: 900px;
-  margin-left: auto;
-  margin-right: auto;
   clear: both;
 }
 
@@ -19,9 +16,14 @@ header{
   width: 100%;
 }
 
-#contenido{
+.contenido{
+  margin: 0;
+  padding: 0;
+  width: 100%;
   display: flex;
+  display: -webkit-flex;
   flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
 }
 
 #cabecera{
@@ -39,24 +41,6 @@ a:link, a:visited{
   color: White;
   font-size: 1.5em;
 }
-
-/*nav{
-  height: 100%;
-  margin-left: auto;
-  margin-right: 1px;
-}
-
-ul{
-  list-style-type: none;
-  margin: auto;
-  overflow: hidden;
-  height: 100%
-}
-
-li{
-  display: inline;
-  word-spacing: 10px;
-}*/
 
 header div{
   display: inline-flex;
@@ -89,19 +73,20 @@ img{
 
 .articulos{
   display: flex;
-  flex-wrap: wrap;
-  flex-flow: row;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
   background-color: #d5c75f;
   font-family: 'Dancing Script', cursive;
   text-align: center;
 }
 
 #ImgPaisajes{
-  width: 67%;
+  width: 55%;
 }
 
 #ImgRetratos{
-  width: 50%;
+  width: 41%;
 }
 
 #ImgPaisajes img[src="img/Paisajes1.png"]{
@@ -138,7 +123,10 @@ footer{
   background-color: #c6d5c5;
   font-family: 'Dancing Script', cursive;
   display: flex;
+  display: -webkit-flex;
   flex-direction: row;
+  -webkit-flex-direction: row;
+  border-radius: 0px 0px 10px 10px;
   clear: both;
 }
 
@@ -169,4 +157,115 @@ footer p{
 footer img[src^=ico]{
   width: 25px;
   height: 25px;
+}
+
+@media all and (max-width:420px){
+  .contenido{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #cabecera{
+    margin: auto;
+    padding: auto;
+  }
+
+  header{
+    margin: auto;
+  }
+
+  #TituloPpal h1{
+    text-align: justify;
+    margin: auto;
+  }
+
+  #MenuPpal {
+    margin: auto;
+    padding: auto;
+  }
+
+  #ImgPpal {
+    padding: 5px 5px;
+  }
+
+  #ImgPaisajes{
+    width: 100%;
+  }
+
+  #ImgRetratos{
+    width: 100%;
+  }
+
+  footer{
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+  }
+
+  #Contacto{
+    padding: 5px 5px;
+    width: 100%;
+    order: 1;
+  }
+
+  #Terminos{
+    padding: 5px 5px;
+    width: 100%;
+    order: 3;
+  }
+
+  #Redes{
+    padding: 5px 5px;
+    width: 100%;
+    order: 2;
+  }
+
+  #Derechos{
+    padding: 5px 5px;
+    width: 100%;
+    order: 4;
+  }
+}
+
+@media all and (max-width:899px) and (min-width:421px) {
+  .contenido{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer{
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+  }
+
+  #Contacto{
+    padding: 15px 15px;
+    width: 40%;
+  }
+
+  #Terminos{
+    padding: 15px 15px;
+    width: 40%;
+  }
+
+  #Redes{
+    padding: 15px 15px;
+    width: 40%;
+  }
+
+  #Derechos{
+    padding: 15px 15px;
+    width: 40%;
+  }
+}
+
+@media all and (min-width:900px){
+  .contenido{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

@@ -9,22 +9,28 @@ body{
 h1{
   text-align: left;
   display: inline;
-  width: 100%
 }
 
 h2{
   margin-top: auto;
 }
 
+header{
+  width: 100%;
+}
+
 #contenido{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#cabecera{
   background-color: #5b7989;
   color: White;
   padding: 20px 20px;
   font-family: 'Dancing Script', cursive;
   text-shadow: 3px 2px #02010a;
   border-radius: 10px 10px 0px 0px;
-  display: flex;
-  flex-direction: row;
 }
 
 a:link, a:visited{
@@ -34,7 +40,7 @@ a:link, a:visited{
   font-size: 1.5em;
 }
 
-nav{
+/*nav{
   height: 100%;
   margin-left: auto;
   margin-right: 1px;
@@ -50,6 +56,26 @@ ul{
 li{
   display: inline;
   word-spacing: 10px;
+}*/
+
+header div{
+  display: inline-flex;
+}
+
+header nav ul{
+  list-style-type: none;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: 1px;
+}
+
+header nav li {
+  display: inline;
+  word-spacing: 10px;
+}
+
+#MenuPpal{
+  float: right;
 }
 
 #ImgPpal{
@@ -113,10 +139,27 @@ footer{
   font-family: 'Dancing Script', cursive;
   display: flex;
   flex-direction: row;
+  clear: both;
 }
 
-#Contacto, #Terminos, #Redes, #Derechos{
-  padding: 20px 20px
+#Contacto{
+  padding: 20px 20px;
+  width: 25%;
+}
+
+#Terminos{
+  padding: 20px 20px;
+  width: 25%;
+}
+
+#Redes{
+  padding: 20px 20px;
+  width: 25%;
+}
+
+#Derechos{
+  padding: 20px 20px;
+  width: 25%;
 }
 
 footer p{
